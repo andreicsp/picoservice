@@ -1,0 +1,14 @@
+{
+    "urls": [
+      ["picoservice/ble/server.py", "github:andreicsp/picoservice/picoservice/ble/server.py"],
+      ["picoservice/ble/sockets.py", "github:andreicsp/picoservice/picoservice/ble/sockets.py"],
+      ["picoservice/core/handler.py", "github:andreicsp/picoservice/picoservice/core/handler.py"],
+      ["picoservice/core/router.py", "github:andreicsp/picoservice/picoservice/core/router.py"],
+      ["picoservice/core/sockets.py", "github:andreicsp/picoservice/picoservice/core/sockets.py"],
+      ["picoservice/web/http.py", "github:andreicsp/picoservice/picoservice/web/http.py"],
+      ["picoservice/web/server.py", "github:andreicsp/picoservice/picoservice/web/server.py"],
+      ["picoservice/web/sockets.py", "github:andreicsp/picoservice/picoservice/web/sockets.py"]
+    ],
+    "deps": [],
+    "version": "0.1.0"
+  }

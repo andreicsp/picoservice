@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "picoservice"
+version = "0.1.0"
+description = "A lightweight API server for MicroPython supporting HTTP and BLE"
+authors = ["Andrei Dumitrache <andrei@dumitrache.net>"]
+license = "MIT License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+pytest-cov = "^2.11"
+sphinx = "^6.2"
+flake8 = "^3.9.2"
+black = "^22.3"
+isort = "^5.9.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+# Configure pytest options if necessary
+addopts = "--cov=upyflow --cov-report=term-missing"
+
+[tool.black]
+line-length = 88
+target-version = ['py37']
+
+[tool.isort]
+profile = "black"
+
+[tool.flake8]
+max-line-length = 88
+ignore = ["E203", "E266", "E501", "W503"]
+exclude = ["build", "dist", "*.egg-info", ".eggs", ".git", ".hg", ".mypy_cache", ".tox", ".venv", "__pycache__"]
